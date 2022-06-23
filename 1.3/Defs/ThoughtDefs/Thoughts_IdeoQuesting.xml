@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThoughtDef>
+		<defName>QuesterMeme_QuestComplete_Success</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stackLimit>300</stackLimit>
+		<stages>
+			<li>
+				<label>quest completed</label>
+				<description>We successfully completed a quest!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>QuesterMeme_QuestComplete_DangerousSuccess</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>10</durationDays>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stackLimit>300</stackLimit>
+		<stages>
+			<li>
+				<label>dangerous quest completed</label>
+				<description>We triumphed, even though the odds were against us!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>QuesterMeme_QuestComplete_Fail</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stackLimit>300</stackLimit>
+		<stages>
+			<li>
+				<label>quest failed</label>
+				<description>We... failed. Clearly we need to prepare more for next time.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>QuesterMeme_QuestExpired</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stackLimit>300</stackLimit>
+		<stages>
+			<li>
+				<label>unaccepted quest expired</label>
+				<description>We passed up on an opportunity to partake in a quest. Who knows what we could've discovered!</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

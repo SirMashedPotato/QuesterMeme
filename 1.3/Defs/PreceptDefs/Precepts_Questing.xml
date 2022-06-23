@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Issue -->
+	<IssueDef>
+		<defName>QuesterMeme_Questing</defName>
+		<label>questing</label>
+		<iconPath>UI/Issues/QuesterMeme_Questing</iconPath>
+	</IssueDef>
+	<!-- History events -->
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_Success</defName>
+		<label>quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_DangerousSuccess</defName>
+		<label>dangerous quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_Fail</defName>
+		<label>quest failed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestExpired</defName>
+		<label>unaccepted quest expired</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestingRespected</defName>
+		<issue>QuesterMeme_Questing</issue>
+		<label>respected</label>
+		<description>Completing quests is a worthy pastime, but there's no need to dwell on what could have been.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<points>1</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>QuesterMeme_QuestingHonourable</defName>
+		<issue>QuesterMeme_Questing</issue>
+		<label>honourable</label>
+		<description>Completing quests is an important aspect of our lives.\n\n&lt;color=#4CE5E5&gt;Dangerous quests are those with a 3+ star rating.&lt;/color&gt;</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<points>1</points>
+			</li>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+				<points>2</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_DangerousSuccess</thought>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>QuesterMeme_QuestingRequired</defName>
+		<issue>QuesterMeme_Questing</issue>
+		<label>required</label>
+		<description>Completing quests is a vital aspect of our lives. Any time not spent partaking in a quest is time wasted.\n\n&lt;color=#4CE5E5&gt;Dangerous quests are those with a 3+ star rating.&lt;/color&gt;</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<points>1</points>
+			</li>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+				<points>2</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_DangerousSuccess</thought>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestExpired</thought>
+				<eventDef>QuesterMeme_QuestExpired</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+</Defs>
