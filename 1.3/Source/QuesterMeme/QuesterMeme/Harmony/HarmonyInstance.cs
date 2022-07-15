@@ -54,7 +54,14 @@ namespace QuesterMeme
                     }
                     if (outcome == QuestEndOutcome.Fail)
                     {
-                        eventDef = HistoryEventDefOf.QuesterMeme_QuestComplete_Fail;
+                        if (__instance.root.autoAccept)
+                        {
+                            eventDef = HistoryEventDefOf.QuesterMeme_QuestComplete_FailAutoAccept;
+                        }
+                        else
+                        {
+                            eventDef = HistoryEventDefOf.QuesterMeme_QuestComplete_Fail;
+                        }
                     }
                     if(!__instance.EverAccepted && __instance.State == QuestState.EndedOfferExpired)
                     {

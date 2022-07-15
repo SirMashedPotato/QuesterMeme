@@ -20,6 +20,10 @@
 		<label>quest failed</label>
 	</HistoryEventDef>
 	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_FailAutoAccept</defName>
+		<label>auto-accepted quest failed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
 		<defName>QuesterMeme_QuestExpired</defName>
 		<label>unaccepted quest expired</label>
 	</HistoryEventDef>
@@ -40,6 +44,40 @@
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<thought>QuesterMeme_QuestComplete_Success</thought>
 				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>QuesterMeme_QuestingHonourable_MilkDrinker</defName>
+		<issue>QuesterMeme_Questing</issue>
+		<label>honourable (milk drinker)</label>
+		<description>Completing quests is an important aspect of our lives, but relations with other factions are also important.\n\n&lt;color=#4CE5E5&gt;Dangerous quests are those with a 3+ star rating.&lt;/color&gt;</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<points>1</points>
+			</li>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+				<points>2</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_DangerousSuccess</thought>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
 			</li>
 		</comps>
 		<requiredMemes>
@@ -75,6 +113,10 @@
 				<thought>QuesterMeme_QuestComplete_Fail</thought>
 				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
 			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_FailAutoAccept</thought>
+				<eventDef>QuesterMeme_QuestComplete_FailAutoAccept</eventDef>
+			</li>
 		</comps>
 		<requiredMemes>
 			<li>QuesterMeme_QuesterMeme</li>
@@ -108,6 +150,10 @@
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<thought>QuesterMeme_QuestComplete_Fail</thought>
 				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_FailAutoAccept</thought>
+				<eventDef>QuesterMeme_QuestComplete_FailAutoAccept</eventDef>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<thought>QuesterMeme_QuestExpired</thought>
