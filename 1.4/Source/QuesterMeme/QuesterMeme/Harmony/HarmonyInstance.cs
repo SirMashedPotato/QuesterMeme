@@ -25,7 +25,6 @@ namespace QuesterMeme
                     HistoryEvent historyEvent = new HistoryEvent(eventDef, p.Named(HistoryEventArgsNames.Doer));
                     Find.HistoryEventsManager.RecordEvent(historyEvent, true);
                 }
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(eventDef, playerPawns[0].Faction.ideos.PrimaryIdeo.Named(HistoryEventArgsNames.Ideo)), true);
             }
         }
 
@@ -45,10 +44,12 @@ namespace QuesterMeme
                         if (__instance.challengeRating >= 3)
                         {
                             eventDef = HistoryEventDefOf.QuesterMeme_QuestComplete_DangerousSuccess;
+                            IdeoUtility.Notify_HistoryEvent(new HistoryEvent(HistoryEventDefOf.QuesterMeme_QuestComplete_DangerousSuccessPoints));
                         } 
                         else
                         {
                             eventDef = HistoryEventDefOf.QuesterMeme_QuestComplete_Success;
+                            IdeoUtility.Notify_HistoryEvent(new HistoryEvent(HistoryEventDefOf.QuesterMeme_QuestComplete_SuccessPoints));
                         }
                     }
                     if (outcome == QuestEndOutcome.Fail)

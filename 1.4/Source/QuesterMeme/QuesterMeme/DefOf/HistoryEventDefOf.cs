@@ -15,5 +15,8 @@ namespace QuesterMeme
 		public static HistoryEventDef QuesterMeme_QuestComplete_Fail;
 		public static HistoryEventDef QuesterMeme_QuestComplete_FailAutoAccept;
 		public static HistoryEventDef QuesterMeme_QuestExpired;
+
+		public static HistoryEventDef QuesterMeme_QuestComplete_SuccessPoints;
+		public static HistoryEventDef QuesterMeme_QuestComplete_DangerousSuccessPoints;
 	}
 }

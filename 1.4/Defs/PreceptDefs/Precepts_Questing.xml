@@ -27,6 +27,15 @@
 		<defName>QuesterMeme_QuestExpired</defName>
 		<label>unaccepted quest expired</label>
 	</HistoryEventDef>
+	<!-- History events for Dev points -->
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_SuccessPoints</defName>
+		<label>quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_DangerousSuccessPoints</defName>
+		<label>dangerous quest completed</label>
+	</HistoryEventDef>
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>QuesterMeme_QuestingRespected</defName>
@@ -38,7 +47,7 @@
 		<displayOrderInImpact>1000</displayOrderInImpact>
 		<comps>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_SuccessPoints</eventDef>
 				<points>1</points>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
@@ -60,11 +69,11 @@
 		<displayOrderInImpact>1000</displayOrderInImpact>
 		<comps>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_SuccessPoints</eventDef>
 				<points>1</points>
 			</li>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccessPoints</eventDef>
 				<points>2</points>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
@@ -94,7 +103,7 @@
 		<displayOrderInImpact>1000</displayOrderInImpact>
 		<comps>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_SuccessPoints</eventDef>
 				<points>1</points>
 			</li>
 			<li Class="PreceptComp_DevelopmentPoints">
@@ -132,11 +141,11 @@
 		<displayOrderInImpact>1000</displayOrderInImpact>
 		<comps>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_SuccessPoints</eventDef>
 				<points>1</points>
 			</li>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccessPoints</eventDef>
 				<points>2</points>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
