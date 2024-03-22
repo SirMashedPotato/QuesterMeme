@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[QuesterMeme_QuestComplete]==========-->
+	<IssueDef>
+		<defName>QuesterMeme_QuestComplete</defName>
+		<label>completing quests</label>
+		<iconPath>UI/Issues/QuesterMeme_QuestComplete</iconPath>
+	</IssueDef>
+	<!-- ==========[QuesterMeme_QuestComplete_Respected]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestComplete_Respected</defName>
+		<issue>QuesterMeme_QuestComplete</issue>
+		<label>respected</label>
+		<description>Completing quests is a worthy pastime.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ==========[QuesterMeme_QuestComplete_Honourable]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestComplete_Honourable</defName>
+		<issue>QuesterMeme_QuestComplete</issue>
+		<label>honourable</label>
+		<description>Completing quests is an important aspect of our lives.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_SuccessPoints</eventDef>
+				<points>1</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Success</thought>
+				<eventDef>QuesterMeme_QuestComplete_Success</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+	<!-- ==========[QuesterMeme_QuestComplete_Daring]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestComplete_Daring</defName>
+		<issue>QuesterMeme_QuestComplete</issue>
+		<label>daring</label>
+		<description>Completing quests is an important aspect of our lives, but only if they provide a good challenge.\n\n&lt;color=#4CE5E5&gt;Dangerous quests are those with a 3+ star rating.&lt;/color&gt;</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccessPoints</eventDef>
+				<points>3</points>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_DangerousSuccess</thought>
+				<eventDef>QuesterMeme_QuestComplete_DangerousSuccess</eventDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemes>
+	</PreceptDef>
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- History events -->
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_Success</defName>
+		<label>quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_DangerousSuccess</defName>
+		<label>dangerous quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_Fail</defName>
+		<label>quest failed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_FailAutoAccept</defName>
+		<label>auto-accepted quest failed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestExpired</defName>
+		<label>unaccepted quest expired</label>
+	</HistoryEventDef>
+	<!-- History events for Dev points -->
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_SuccessPoints</defName>
+		<label>quest completed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>QuesterMeme_QuestComplete_DangerousSuccessPoints</defName>
+		<label>dangerous quest completed</label>
+	</HistoryEventDef>
+</Defs>

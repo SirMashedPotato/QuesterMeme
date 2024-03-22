@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[QuesterMeme_QuestFail]==========-->
+	<IssueDef>
+		<defName>QuesterMeme_QuestFail</defName>
+		<label>failing quests</label>
+		<iconPath>UI/Issues/QuesterMeme_QuestFail</iconPath>
+	</IssueDef>
+	<!-- ==========[QuesterMeme_QuestFail_Disliked]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestFail_Disliked</defName>
+		<issue>QuesterMeme_QuestFail</issue>
+		<label>disliked</label>
+		<description>Failing a quest is a great shame, but we can always learn from our mistakes.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ==========[QuesterMeme_QuestFail_Disapproved]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestFail_Disapproved</defName>
+		<issue>QuesterMeme_QuestFail</issue>
+		<label>disapproved</label>
+		<description>Every opportunity to partake in a quest should be taken.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestExpired</thought>
+				<eventDef>QuesterMeme_QuestExpired</eventDef>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ==========[QuesterMeme_QuestFail_Dishonorable]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestFail_Dishonorable</defName>
+		<issue>QuesterMeme_QuestFail</issue>
+		<label>dishonourable</label>
+		<description>Even quests thrust upon us without warning should be fulfilled.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_Fail</thought>
+				<eventDef>QuesterMeme_QuestComplete_Fail</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestExpired</thought>
+				<eventDef>QuesterMeme_QuestExpired</eventDef>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<thought>QuesterMeme_QuestComplete_FailAutoAccept</thought>
+				<eventDef>QuesterMeme_QuestComplete_FailAutoAccept</eventDef>
+			</li>
+		</comps>
+	</PreceptDef>
+</Defs>

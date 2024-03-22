@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RitualAttachableOutcomeEffectDef>
+		<defName>QuesterMeme_QuestRitualReward</defName>
+		<label>discover a quest</label>
+		<effectDesc>you will discover a quest. If the ritual is of the highest quality then you will discover an additional quest.</effectDesc>
+		<letterInfoText>You've discovered a quest.</letterInfoText>
+		<workerClass>QuesterMeme.RitualAttachableOutcomeEffectWorker_GenerateQuest</workerClass>
+		<requiredMemeAny>
+			<li>QuesterMeme_QuesterMeme</li>
+		</requiredMemeAny>
+		<disallowedRituals>
+			<li>FuneralStandard</li>
+			<li>FuneralNoCorpse</li>
+		</disallowedRituals>
+	</RitualAttachableOutcomeEffectDef>
+</Defs>
