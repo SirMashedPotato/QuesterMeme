@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MemeDef>
+		<defName>QuesterMeme_QuesterMeme</defName>
+		<label>quester</label>
+		<description>Whether near or far, there are many wonders to discover in this world.\n\n&lt;color=#E5E54C&gt;Unlocked ritual attachable outcomes:&lt;/color&gt;\n - Discover a quest.</description>
+		<iconPath>UI/Memes/QuesterMeme_QuesterMeme</iconPath>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->bold</li>
+				<li>memeAdjective->daring</li>
+				<li>memeAdjective->adventurous</li>
+				<li>memeLeaderAdjective->intrepid</li>
+				<li>memeLeaderAdjective->fearless</li>
+				<li>memeLeaderAdjective->undaunted</li>
+				<li>memeLeaderAdjective->unflinching</li>
+				<li>memeConcept->wealth</li>
+				<li>memeConcept->courage</li>
+				<li>memeConcept->danger</li>
+				<li>memeConcept->honour</li>
+				<li>memeConcept->glory</li>
+				<li>memeLeaderNoun->seeker</li>
+				<li>memeLeaderNoun->quester</li>
+				<li>memeLeaderNoun->explorer</li>
+				<li>memeLeaderNoun->traveller</li>
+				<li>memeLeaderNoun->pioneer</li>
+				<li>memeLeaderNoun->adventurer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_QuesterMeme)        ->During a great period of unrest, [deity0_name] proved [deity0_possessive] worth by partaking in a great undertaking, a quest to end all quests.</li>
+					<li>episode(uses=1,tag=meme_QuesterMeme)  ->Upon completing [deity0_possessive] quest, [deity0_name] began an age of enlightenment, and created the first [altarRoomLabel].</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_QuesterMeme)           ->[deity0_name] created [place_summary] [place_name], a hidden site, that only the most worthy could ever find.</li>
+					<li>conflict(tag=meme_QuesterMeme)        ->A [foeLeader] tried their hardest to find this sacred site, leaving a trail of blood behind [foeLeader_objective].</li>
+					<li>founderJoin(tag=meme_QuesterMeme)     ->A great quester named [founderName] arose, and [founder_possessive] began a quest to find, and protect, this sacred site from the wrath of [foeSoldiers].</li>
+					<li>victory(tag=meme_QuesterMeme)         ->[founderName] and the [memberNamePlural] undertake a great journey, eventually reaching the sacred site, and ending the wrath of [foeLeader]. As a reward, [deity0_name] built a grand [altarRoomLabel] there, and appointed [foeLeader] as the first leader.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_QuesterMeme)           ->In order to save [founder_possessive] village, [founderName] began a great quest. [founderName] journeyed far, and dealt with many dangers, but eventually [founder_pronoun] reached [place_summary] [place_name], and put an end to [foeLeader].</li>
+					<li>story(uses=1,tag=meme_QuesterMeme)    ->One day while walking the streets, [founderName] was approached by a commoner, who told [founderName] of their missing [Animal]. [founderName] found the missing pet, and took it back to the commoner.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_QuesterMeme)         ->There are many lessons you can learn when travelling the world. One peasant told me that</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->wolves hunt in packs</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->even in numbers, a weakling is a weakling still</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->they're masterworks all, you can't go wrong</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->you should never eat the yellow snow</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->I like to wear shorts, they're comfy and easy to wear</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->I thought adventurers were supposed to look tough</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->there’s another settlement that needs your help</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->overconfidence is a slow and insidious killer</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->why walk when you can ride</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->you like to dance close to fire, don't you</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->sometimes the real reward is the friends you make along the way</li>
+					<li>lessonReinforcement(tag=meme_QuesterMeme) ->Only those that listen to the words of others will survive the dangerous wilds, and the settlements.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>QuesterMeme_QuestComplete_Respected</li>
+				<li>QuesterMeme_QuestComplete_Honourable</li>
+				<li>QuesterMeme_QuestComplete_Daring</li>
+			</li>
+			<li>
+				<li>QuesterMeme_QuestFail_Disliked</li>
+				<li>QuesterMeme_QuestFail_Disapproved</li>
+				<li>QuesterMeme_QuestFail_Dishonorable</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Guild</ideoName>
+				<theme>adventure</theme>
+				<adjective>adventurer</adjective>
+				<member>adventurer</member>
+			</li>
+			<li>
+				<ideoName>Guild</ideoName>
+				<theme>exploration</theme>
+				<adjective>explorer</adjective>
+				<member>explorer</member>
+			</li>
+			<li>
+				<ideoName>Guild</ideoName>
+				<theme>questing</theme>
+				<adjective>quester</adjective>
+				<member>quester</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>
