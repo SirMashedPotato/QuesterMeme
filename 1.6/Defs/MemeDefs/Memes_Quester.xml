@@ -47,6 +47,7 @@
 					<li>lesson(tag=meme_QuesterMeme)              ->wolves hunt in packs</li>
 					<li>lesson(tag=meme_QuesterMeme)              ->even in numbers, a weakling is a weakling still</li>
 					<li>lesson(tag=meme_QuesterMeme)              ->they're masterworks all, you can't go wrong</li>
+					<li>lesson(tag=meme_QuesterMeme)              ->different combinations of materials result in different creations</li>
 					<li>lesson(tag=meme_QuesterMeme)              ->you should never eat the yellow snow</li>
 					<li>lesson(tag=meme_QuesterMeme)              ->I like to wear shorts, they're comfy and easy to wear</li>
 					<li>lesson(tag=meme_QuesterMeme)              ->I thought adventurers were supposed to look tough</li>
@@ -66,6 +67,7 @@
 				<li>QuesterMeme_QuestComplete_Daring</li>
 			</li>
 			<li>
+				<li>QuesterMeme_QuestFail_DontCare</li>
 				<li>QuesterMeme_QuestFail_Disliked</li>
 				<li>QuesterMeme_QuestFail_Disapproved</li>
 				<li>QuesterMeme_QuestFail_Dishonorable</li>

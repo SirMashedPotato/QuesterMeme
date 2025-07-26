@@ -6,6 +6,16 @@
 		<label>failing quests</label>
 		<iconPath>UI/Issues/QuesterMeme_QuestFail</iconPath>
 	</IssueDef>
+	<!-- ==========[QuesterMeme_QuestFail_DontCare]==========-->
+	<PreceptDef>
+		<defName>QuesterMeme_QuestFail_DontCare</defName>
+		<issue>QuesterMeme_QuestFail</issue>
+		<label>don't care</label>
+		<description>Sometimes we fail a quest, but that's ok, because we can always learn from our mistakes.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+	</PreceptDef>
 	<!-- ==========[QuesterMeme_QuestFail_Disliked]==========-->
 	<PreceptDef>
 		<defName>QuesterMeme_QuestFail_Disliked</defName>
